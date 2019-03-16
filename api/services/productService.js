@@ -4,7 +4,6 @@ const Product = require("../models/product");
 class ProductService {
     //get product by category id 
     static getProductByCategory(categoryId) {
-        console.log(categoryId);
         return Product.find({
                 $or: [{
                     category: categoryId

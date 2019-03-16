@@ -7,7 +7,7 @@ const categoryRoutes = require("./api/routes/category");
 const productRoutes = require("./api/routes/products");
 
 mongoose.connect(
-    "mongodb://saurav:sauravpass@mycluster-shard-00-00-kssdk.mongodb.net:27017,mycluster-shard-00-01-kssdk.mongodb.net:27017,mycluster-shard-00-02-kssdk.mongodb.net:27017/User?ssl=true&replicaSet=MyCluster-shard-0&authSource=admin&retryWrites=true", {
+    "mongodb://saurav:<Password>@mycluster-shard-00-00-kssdk.mongodb.net:27017,mycluster-shard-00-01-kssdk.mongodb.net:27017,mycluster-shard-00-02-kssdk.mongodb.net:27017/User?ssl=true&replicaSet=MyCluster-shard-0&authSource=admin&retryWrites=true", {
         useMongoClient: true
     }
 );
