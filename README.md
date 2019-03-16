@@ -1,12 +1,13 @@
 # nodejs-test
 
-API 1 - Add a category
-Request URL - POST localhost:3000/category
-Request Payload - {
+## API 1 - Add a category
+* Request URL - POST localhost:3000/category
+* Request Payload - 
+{
     "categoryName":"Men's Clothing",
     "parent":"Clothing"
 }
-Response Payload :
+* Response Payload :
 {
   "_id": "5c8d1055c1716d57080f3120",
   "categoryName": "Men's Clothing",
@@ -20,14 +21,14 @@ Response Payload :
   ]
 }
 
-API 2 - add a product and its mapping to categories
-Request URL - localhost:3000/products
-Request Payload - {
+## API 2 - add a product and its mapping to categories
+* Request URL - localhost:3000/products
+* Request Payload - {
     "productName":"PepeJean Slim Jeans",
     "productPrice":980,
     "categories" : ["Men's Jeans"]
 }
-Response Payload - {
+* Response Payload - {
     "_id": "5c8d13c2c1716d57080f3127",
     "productName": "PepeJean Slim Jeans",
     "productPrice": 980,
@@ -43,9 +44,9 @@ Response Payload - {
     "id": "5c8d13c2c1716d57080f3127"
 }
 
-API 3 - get all categories
-Request URL- GET localhost:3000/category
-Response Payload :
+## API 3 - get all categories
+* Request URL - GET localhost:3000/category
+* Response Payload :
 [
     {
         "id": "5c8d0ffdc1716d57080f311f",
@@ -88,9 +89,10 @@ Response Payload :
         "childCategories": []
     }
 ]
-API 4 - get all product for given category
-Request Api - localhost:3000/products/Men's Clothing
-Response Payload -
+
+## API 4 - get all product for given category
+* Request Api - localhost:3000/products/Men's Clothing
+* Response Payload -
 [
     {
         "_id": "5c8d13b0c1716d57080f3126",
@@ -106,14 +108,14 @@ Response Payload -
     }
 ]
 
-API 5- Update product detail or mapping to categories
-Request API- PUT localhost:3000/products/5c8d147dc1716d57080f3128
-Request Payload-
+## API 5- Update product detail or mapping to categories
+* Request API- PUT localhost:3000/products/5c8d147dc1716d57080f3128
+* Request Payload-
 {
     "productName":"US Polo T-Shirt",
     "productPrice": 1100
 }
-Response Payload-
+* Response Payload-
 {
     "message": "SuccessFully updated.",
     "product": {
